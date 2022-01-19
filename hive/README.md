@@ -31,5 +31,3 @@ Local Repository
 ## C. Question & Answer
 Please feel free to contact Austin Rho 
     - ssrho@kolon.com, injoyer@yonsei.ac.kr
-
-

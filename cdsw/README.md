@@ -26,7 +26,18 @@ Local Repository
     //run "select * from jobs"  
     - kubectl exec $(kubectl get pods -l role=db --no-headers=true -o custom-columns=NAME:.metadata.name) -ti -- psql -U sense -c "select * from jobs"   
 
-
+    //kubernates Pod 전체 조회
+	- kubectl get pod --all-namespaces -o wide
+	
+	//Kubernates pod 한개 상세 조회
+	- kubectl describe pod (NAME) -n (NAMESPACE)
+	- kubectl describe pod 5oasdfasfdsvdsb0b -n defaut-user-17
+	
+	//Kubernates 시크릿파일 보기
+	- kubectl get secrets internal-secrets -o yaml/json
+    
+    //Kubernates 시크릿파일 수정
+    - kubectl edit secret internal-secrets	
 
 **3. (conda) cdsw-build.sh (conda version)**
 
