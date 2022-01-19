@@ -38,6 +38,19 @@ Local Repository
     
     //Kubernates 시크릿파일 수정
     - kubectl edit secret internal-secrets	
+	
+	//Pod에 접속
+	- kubectl exec -it 5oasdfasfdsvdsb0b -n default-user-1 /bin/bash
+	
+	//Pod 로그
+	- kubectl logs -f 5oasdfasfdsvdsb0b
+	
+	//Kubernates node 체크
+	- kubectl get node --show-kind --show-labels
+	
+	// Hosts 수정
+	- kubectl exec -it 5oasdfasfdsvdsb0b -n default-user-1 -- bash -c "echo 'xxx.xxx.xxx.xxx  hostname' >> /etc/hosts"
+	
 
 **3. (conda) cdsw-build.sh (conda version)**
 
